@@ -1,6 +1,6 @@
 - name: demo on prompt
   hosts: local
-  conection: local
+  connection: local
   vars_prompt:
     - name: username
       prompt: "Please enter username"
