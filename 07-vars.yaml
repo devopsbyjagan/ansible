@@ -6,9 +6,9 @@
       prompt: "Please enter username"
       private: false
 
-    -name: password
-     prompt: "please enter password"
-     private: true
+    - name: password
+      prompt: "please enter password"
+      private: true
 
   tasks: 
   - name: print information
