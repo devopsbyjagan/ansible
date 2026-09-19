@@ -1,0 +1,18 @@
+- name: demo on filters
+  hosts: local
+  connection: local
+  vars:
+    topics: linux, shell, Ansible, Terraform
+    tagMap:
+      name: Ansible
+      project: roboshop
+      environment: dev
+    full_name: jaganmohan
+    ip_address: 178.90.78.17
+    tagsList:
+  tasks:
+  - name: covert string to list
+    debug:
+      msg: "Topics are: {{ topics | split(',') }}"
+
+    
